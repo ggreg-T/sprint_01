@@ -1,0 +1,33 @@
+﻿Cette page web vous permettra de générer aléatoirement des groupes selon le nombre d’apprenants. Pour cela, veuillez sélectionner le nombre de groupe voulu. Si vous le souhaitez, vous pouvez ajouter ou supprimer un apprenant dans la liste ci-dessous.
+
+
+
+Afficher liste de noms
+"Thomas A" "Yannick" "Gregory B" etc....
+
+Ajouter nom
+"Pressez la touche "Valider" pour ajouter un nom à la liste
+
+Effacer nom
+"Pressez la croix "X" pour supprimer un nom de la liste
+
+Générer des groupes aléatoirement 
+fonction (random):
+  Récupérer les valeurs dans la liste de noms
+  Convertir les valeurs récupérées en nombre
+  Si une conversion en nombre s'est mal passé:
+     Afficher un message d'erreur à l'utilisateur
+     Sortir de la fonction
+  Récupérer le nombre de groupes devant être généré
+  Diviser les deux nombres entre-eux
+
+  Afficher les groupes
+
+
+fonction random2:
+  Récupérer les noms des participants dans une liste
+  Récupérer le nombre de groupe à générer
+  Calculer le nombre de personnes par groupe
+  Dispatcher les participant dans différents groupes en respectant le nombre de personnes par groupe
+  Afficher les groupes générés
+

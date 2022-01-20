@@ -1,0 +1,71 @@
+
+body {
+    background: linear-gradient(to top right , rgb(253, 6, 6), rgb(131, 238, 131), rgb(2, 87, 2));
+    height:100vh; background-position: center; background-attachment: fixed;
+}
+/* en-tete */
+#logo{
+    height: auto; width: 30%;margin-left: 100px;
+}
+#ftg{
+    justify-content: center; align-items: center;
+    height: auto; width: 70%;}
+
+#grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 0vw;
+    text-align: left;
+    margin-right: 25px;
+}
+#grid1 { 
+    display: flex; height: 150px; margin: 0 auto;
+}
+/* texte */
+h2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* css liste de nom et ajout de pesonne */
+#grid3 { 
+    display: flex; min-height: 30vh;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+#ajonbr{margin: 100px; top: 0%; padding: 15px;
+        width: 50%; min-height: auto;
+      }
+
+#tda{text-align: center; align-items: center;
+          width: 50%; min-height: auto;
+          border-radius: 10px;
+          background-color: honeydew;
+}
+
+#gen {
+    background-color: rgb(253, 6, 6); border: 12px rgb(2, 87, 2);
+    border-radius: 30px;  padding: 15px; margin-left: 60px;      
+    position: relative;
+    left: 40%; right: 50%; top: 0%;
+}
+
+#gen:hover{
+    transition: all .3s;
+    background-color: rgb(100, 250, 86);
+    transform: scale(1.3); translate:(-7px, 0px,);
+    box-shadow:0px 0px 5px 5px rgb(176, 229, 236) ;
+}
+
+/* partie creation de groupe */
+
+ #groupe{
+    position: absolute; font-size: 2rem;
+    right: 50%; left: 37%;
+    background-color: rgb(23, 146, 23); width: 300px;
+    border: 4px solid black; border-radius: 20px; ; 
+ }
+ .grg{
+     width: 0 auto;
+     min-height: 30em; 
+ }

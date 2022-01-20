@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="initial-scale=1.0"> -->
+    <title>Fais tes groupes !</title>
+    <link rel="stylesheet" href="stil.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<div id="grid1" style="background-image:url('band.png'); 
+background-repeat:no-repeat; background-size: 100% 135px">
+  <div id="logo"><p><img  src="logoGD.png" width="120px" height="90px" ></p></p></div>
+  <div id="ftg"><p><img  src="faistesgroupes.png"   height="100px" ></div>
+</div>
+
+<h2><p>Salut cet outil te permettra de générer aléatoirement des groupes selon le nombre d’apprenants. 
+  Pour cela, veuillez sélectionner le nombre de groupe voulu. Si vous le souhaitez, vous pouvez ajouter ou supprimer un apprenant dans la liste ci-dessous.</strong></p></h2>
+
+<!--/tableau apprenant + nbr groupe et ajout-->
+<div id="grid3">
+  <span id="tda"> 
+    <strong><em>Tableau liste apprenant</em></strong>
+    <span id="div1"><br>
+      <span id="display">
+      <li >Yannick<span ><button value="1" onClick="removeName(this)" >X</button></span></li>
+      <li >Romain<span><button value="2" onClick="removeName(this)" >X</button></span></li>
+      <li >Gregory T<span ><button value="3" onClick="removeName(this)" >X</button></span></li>
+      <li >Stephanie<span ><button value="4" onClick="removeName(this)" >X</button></span></li> 
+      <li >Quentin<span ><button value="5" onClick="removeName(this)" >X</button></span></li>
+      <li >Thomas B<span><button value="10" onClick="removeName(this)" >X</button></span></li>
+      <li >Gregory D<span ><button value="7" onClick="removeName(this)" >X</button></span></li>
+      <li >Steve<span ><button value="8" onClick="removeName(this)" >X</button></span></li> 
+      <li >Thomas A<span><button value="6" onClick="removeName(this)" >X</button></span></li>
+      <li >Julie<span ><button value="9" onClick="removeName(this)" >X</button></span></li>
+      <li >Allan<span ><button value="11" onClick="removeName(this)" >X</button></span></li>
+      <li >Moana<span ><button value="12" onClick="removeName(this)" >X</button></span></li> 
+      <li >Stephane<span ><button value="12" onClick="removeName(this)" >X</button></span></li> 
+
+      </span>
+    </span>
+  </span>
+  <div id="ajonbr" >
+    <label for="name">Nombre de groupe: </label>
+    <input type="number" id="NbrGr" /><br />
+    <button type="button" value="division" onClick="div()">Valider</button>
+<br>
+  <br>
+  <form method="get">
+      <label for="name">Ajouter une personne: </label>
+      <input type="text"  id="userInput" aria-label="Recipient's username"
+      aria-describedby="basic-addon2"><br>
+      <button  type="button" onClick="addUserInfo()">Ajouter</button>
+      <!-- <input type="text" name="name" id="name" required id="pers"> -->
+        <input type="submit" value="Mise à zéro">
+  </form></div>
+</div>
+<br><br><br>
+
+<!-- bouton generer -->
+  <button id="gen" onclick="cmp()"   style="text-align: center;"><strong>GENERER</strong></button>
+
+<!--  / separateur + groupe genere*/-->
+<br><br>
+<div><hr width="80%"></div>
+
+<div id="groupe" style="text-align: center;">Groupes</div>
+<div class="grg"><span class="grgen"></span></div>
+    <!-- <script type="text/javascript" src="javbut.js"></script> -->
+    <script  type="text/javascript" src="maj.js"></script>
+
+</body>
+</html>
